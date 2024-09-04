@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id-ID">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PEMBUAT LIRIK</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <!-- About Web -->
+  <meta name="description" content="Kami hadir untuk memudahkan anda dalam pembuatan lirik dari file json">
+  <meta name="keywords" content="lirik, lyrics, song, liriklagu, lagu, music, musik, musiklirik, musiclyrics, lirikmusik, lyricsmusic suryodwijayanto, iyortml, darkclue, darkcluemusic, iddevlop, cusmedroid">
+  <meta name="author" content="Suryo DwiJayanto">
+  <!-- Robot -->
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <!-- Meta SEO -->
+  <meta property="og:title" content="PEMBUAT LIRIK">
+  <meta property="og:url" content="https://darkcluemusic.github.io/lyrics-maker/">
+  <meta property="og:description" content="Kami hadir untuk memudahkan anda dalam pembuatan lirik dari file json">
+  <meta property="og:image" content="logo.png">
+  <link rel="canonical" href="https://darkcluemusic.github.io/lyrics-maker/">
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Include link jQuery 3.6.0 -->
+  <script type='text/javascript' src='https://cusmedroid.github.io/js/jquery-3.6.0.min.js'></script>
+</head>
+
+<body id="myCopyright">
+  <div class="main">
+    <div class="mdonatelah" onclick="mDonate()"><p class="najd">D O N A S I</p><b>T E R I M A K A S I H</b></div>
+    <header>
+      <h1>PEMBUAT LIRIK</h1>
+    </header>
+    <main>
+      <label>Unggah mp3</label>
+      <input type="file" class="input" name="fileAudio" accept=".mp3,audio/*" value="" onchange="PreviewAudio(this, $('#audioPreview'))" />
+      <audio controls="controls" id="audioPreview">
+        <source src="" type="audio/mp4" />
+      </audio>
+      <p class="scp">Milidetik : <input type="text" id="audioTime" oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;" placeholder="0" readonly required></p>
+      <form>
+        <input id="item" class="input" type="text" placeholder="Tambahkan baris lirik.." required>
+      </form>
+      <h2>JSON</h2>
+      <div class="mcode" id="msaves">
+        <p class="mpre">
+{
+    "lyrics": [</p>
+        <div id="dodol"></div>
+        <p class="mpre">    ]
+}
+        </p>
+      </div>
+      <button id="zbtn">Hapus Semua</button>
+      <h2>CATATAN</h2>
+      <article class="mcode">
+        <p class="mpre">
+- Siapkan lagu dan lirik lagu
+- Unggah lagu anda
+- Putar audio anda
+- Tempel setiap baris pada lirik
+- Kopas pada file json anda
+- hapus ',' di bagian akhir mis. '{ "line": "Thanks For Visit", "time": 220000 },' menjadi '{ "line": "Thanks For Visit", "time": 220000 }'
+- Jika terjadi kekacauan pada lirik ubah time mis. 180.00231 menjadi 180
+        </p>
+      </article>
+      <button class="bbtn" onclick="mPreview()">Tinjau</button>
+    </main>
+    <footer>
+      <p>Dipersembahkan oleh <b><a title="Suryo DwiJayanto" target="_blank" href="https://www.google.com/search?q=Suryo%20DwiJayanto">Suryo DwiJayanto</a></b></p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="https://darkcluemusic.github.io/assets/js/lyrics-maker/bd7gf883j77s6a2.js"></script>
+  <script type="text/javascript" src="https://darkcluemusic.github.io/assets/js/disclaimer/index.js"></script>
+</body>
+</html>
